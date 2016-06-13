@@ -24,7 +24,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <nav>
   {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-  {{ template "_internal/pagination.html" . }}
+  {{ partial "pagination.html" . }}
 </nav>
 
 
